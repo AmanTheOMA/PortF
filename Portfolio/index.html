@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aman's Portfolio</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="fanta.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+
+  <body>
+    <header>
+      <a href="/">Ahmad A.</a>
+      <nav>
+        <a target="_blank" href="https://github.com/AmanTheOMA"
+          ><i class="fa-brands fa-github"></i
+        ></a>
+        <a target="_blank" href="#"><i class="fa-brands fa-linkedin"></i></a>
+      </nav>
+    </header>
+    <main>
+      <section>
+        <div class="intro-header">
+          <h1>Ahmad Aman speaking...</h1>
+          <p style="text-align: center">
+            <strong>Macaulay Honors</strong> Computer Science student at <br />
+            <i>City College of New York</i>
+          </p>
+        </div>
+        <h5 class="intro-description">
+          A CS students by technicality, an enthusiast by trade. Based in New
+          York City, I love to learn, apply, and teach all sorts of fun and
+          useful knowledge!
+        </h5>
+        <div class="links-container">
+          <i class="fa-solid link-arrow fa-arrow-right"></i>
+          <a href="mailto:samadikaman@gmail.com"> Email me </a>
+          <a target="_blank" href="https://github.com/AmanTheOMA">GitHub</a>
+          <a target="_blank" href="#">LinkedIn</a>
+        </div>
+
+        <div id="play-game">
+          <button onclick="playGame()">Play game???</button>
+        </div>
+        <div style="display: none" class="color-div">
+          <h4>Pick a color</h4>
+          <p style="display: none">Great... now it's ruined...Kidding!</p>
+          <input
+            type="color"
+            id="color-picker"
+            onchange="changeColor()"
+            value="#0084ff"
+          />
+          <button style="display: none" onclick="resetColor()">Reset</button>
+        </div>
+      </section>
+
+      <section>
+        <h2>Skills</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Area</th>
+              <th>Technologies</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>JavaScript</td>
+              <td>ReactJS | React Native | NextJS | NodeJS & ExpressJS</td>
+            </tr>
+
+            <tr>
+              <td>Web</td>
+              <td>TailwindCSS | FantaCSS | Firebase | PostgreSQL | GIT</td>
+            </tr>
+            <tr>
+              <td>Design</td>
+              <td>Canva | Microsoft Paint | Figma</td>
+            </tr>
+            <tr>
+              <td>Essentials</td>
+              <td>
+                Public Speaking | Management | Solutions | Sales | Marketing
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section>
+        <h2>Lastest Projects</h2>
+        <div class="cards-grid">
+          <div class="project-card">
+            <div>
+              <p>May 10, 2025</p>
+              <h4>MoodPulse</h4>
+              <div class="tech-list">
+                <div class="card-button-secondary">
+                  <p>ReactJS</p>
+                </div>
+                <div class="card-button-secondary">
+                  <p>NextJS</p>
+                </div>
+                <div class="card-button-secondary">
+                  <p>FantaCSS</p>
+                </div>
+                <div class="card-button-secondary">
+                  <p>Firebase</p>
+                </div>
+                <div class="card-button-secondary">
+                  <p>TailwindCSS</p>
+                </div>
+              </div>
+              <p>A reliable - secure - free mood tracker and analyzer</p>
+              <div class="project-links">
+                <a target="_blank" href="https://moodpulse.netlify.app/"
+                  >Live</a
+                >
+                <a
+                  target="_blank"
+                  href="https://github.com/AmanTheOMA/MoodPulse"
+                  >GitHub</a
+                >
+              </div>
+            </div>
+            <div class="img-div">
+              <img
+                class="big-img"
+                src="./public/MoodPulse.png"
+                alt="Aman-thumbnail"
+              />
+            </div>
+          </div>
+
+          <div class="project-card">
+            <div>
+              <p>June 17, 2025</p>
+              <h4>SubSense</h4>
+              <div class="tech-list">
+                <div class="card-button-secondary">
+                  <p>NextJS</p>
+                </div>
+                <div class="card-button-secondary">
+                  <p>FantaCSS</p>
+                </div>
+                <div class="card-button-secondary">
+                  <p>TailwindCSS</p>
+                </div>
+                <div class="card-button-secondary">
+                  <p>Firebase</p>
+                </div>
+                <div class="card-button-secondary">
+                  <p>Node-Express</p>
+                </div>
+              </div>
+              <p>
+                A smart - responsive - open source website to track your
+                subscriptions
+              </p>
+              <div class="project-links">
+                <a target="_blank" href="https://subsense.netlify.app/">Live</a>
+                <a
+                  target="_blank"
+                  href="https://github.com/AmanTheOMA/Sub-Sense"
+                  >GitHub</a
+                >
+              </div>
+            </div>
+            <div class="img-div">
+              <img
+                class="big-img"
+                src="./public/SubSense.png"
+                alt="Aman-thumbnail"
+              />
+            </div>
+          </div>
+
+          <div class="project-card">
+            <div>
+              <p>July 15, 2025</p>
+              <h4>NextRep</h4>
+              <div class="tech-list">
+                <div class="card-button-secondary">
+                  <p>ReactJS</p>
+                </div>
+                <div class="card-button-secondary">
+                  <p>FantaCSS</p>
+                </div>
+                <div class="card-button-secondary">
+                  <p>Javascript</p>
+                </div>
+                <div class="card-button-secondary">
+                  <p>Localstorage</p>
+                </div>
+              </div>
+              <p>
+                Start and stay fit with this precise - educational - beginner
+                friendly 30 days workout plan
+              </p>
+              <div class="project-links">
+                <a target="_blank" href="https://next-rep.netlify.app/">Live</a>
+                <a target="_blank" href="https://github.com/AmanTheOMA/Next-Rep"
+                  >GitHub</a
+                >
+              </div>
+            </div>
+            <div class="img-div">
+              <img
+                class="big-img"
+                src="./public/NextRep.png"
+                alt="Aman-thumbnail"
+              />
+            </div>
+          </div>
+          <div class="project-card">
+            <div>
+              <p>August 15, 2025</p>
+              <h4>PokeLib</h4>
+              <div class="tech-list">
+                <div class="card-button-secondary">
+                  <p>ReactJS</p>
+                </div>
+                <div class="card-button-secondary">
+                  <p>FantaCSS</p>
+                </div>
+                <div class="card-button-secondary">
+                  <p>Javascript</p>
+                </div>
+                <div class="card-button-secondary">
+                  <p>Localstorage</p>
+                </div>
+                <div class="card-button-secondary">
+                  <p>A Lot of API use</p>
+                </div>
+              </div>
+              <p>A more modern version of pokemon Library!</p>
+              <div class="project-links">
+                <a target="_blank" href="https://poke-lib.netlify.app/">Live</a>
+                <a target="_blank" href="https://github.com/AmanTheOMA/PokeLib"
+                  >GitHub</a
+                >
+              </div>
+            </div>
+            <div class="img-div">
+              <img
+                class="big-img"
+                src="./public/PokeLib.png"
+                alt="Aman-thumbnail"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <p>
+        By <a href="#">Aman</a> ⭐️ For more, check out my
+        <a target="_blank" href="https://github.com/AmanTheOMA">GitHub</a>
+      </p>
+    </footer>
+    <script>
+      // This is where we create the interactivity for our little color switching game
+
+      // 1. select all the html elements so that we can later manipulate them
+      const body = document.querySelector("body");
+      const colorInput = document.getElementById("color-picker");
+      const colorDiv = document.querySelector(".color-div");
+      const hiddenText = document.querySelector(".color-div p");
+      const resetBtn = document.querySelector(".color-div button");
+      const playBtn = document.getElementById("play-game");
+
+      // 2. create the functions
+
+      function playGame() {
+        // this function enables the play of the game by showing the color selector input
+        colorDiv.style.display = "block";
+        playBtn.style.display = "none";
+      }
+
+      function changeColor() {
+        // take the users selected color on the input, and assign it to be the background color of the website
+        const selectedColor = colorInput.value;
+        body.style.background = selectedColor;
+        resetBtn.style.display = "block";
+        hiddenText.style.display = "block";
+        colorInput.style.display = "none";
+      }
+
+      function resetColor() {
+        body.style.background = "white";
+        colorInput.style.display = "block";
+        playBtn.style.display = "block";
+
+        hiddenText.style.display = "none";
+        resetBtn.style.display = "none";
+        colorDiv.style.display = "none";
+      }
+
+      // 3. is to assign the functions to the buttons by adding them function call to the actual elements (done above in the html code)
+    </script>
+  </body>
+</html>
